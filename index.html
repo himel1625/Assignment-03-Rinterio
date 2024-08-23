@@ -25,11 +25,17 @@
       extend: {
         colors: {
           customGradient: 'linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%)',
-          gray: 'rgb(30, 30, 30)',
+          whites: 'rgba(255, 255, 255) ',
+          gray: '#F4F4F4',
           green: ' rgb(171, 239, 95)',
           lightGreen: 'rgba(171, 239, 95, 0.5)',
           Primary: 'rgb(115, 115, 115)',
           secondary: 'rgb(33, 33, 33)',
+          pink: 'rgb(231, 193, 211)',
+          yellow: 'rgb(239, 218, 110)',
+          lightGrey: 'rgb(164, 218, 195)',
+          lightBul: 'rgb(119, 170, 234)',
+
         },
         fontFamily: {
           serif: [" Manrope"],
@@ -42,9 +48,9 @@
   };
 </script>
 
-<body class="sm:max-w-1440 sm:w-full mx-auto font-serif bg-customGradient">
+<body class="sm:max-w-[1440px] sm:w-full mx-auto font-serif bg-customGradient scroll-smooth">
   <!-- Header section  -->
-  <header >
+  <header>
     <!-- Header navbar section -->
     <nav class="flex justify-between items-center m-5  cursor-pointer">
       <div class="font-extrabold text-2xl flex justify-center "><ion-icon class="rotate-45 bg-green p-1 rounded-full"
@@ -62,7 +68,7 @@
             <ion-icon class="p-2 text-2xl" name="search-outline"></ion-icon>
             <ion-icon class="p-2 text-2xl" name="cart-outline"></ion-icon>
           </div>
-          <p class="flex px-3 py-2 rounded-2xl bg-green text-black font-semibold ">Book Consult<ion-icon
+          <p class="flex px-3 py-2 rounded-2xl bg-green text-black font-semibold">Book Consult<ion-icon
               class="rotate-45 bg-black text-white p-1 rounded-full text-xl" name="arrow-up-outline"></ion-icon>
           </p>
         </div>
@@ -74,23 +80,139 @@
     </nav>
     <!-- Header Hero section -->
     <div class="flex flex-col">
-      <img class="w-3/4 m-auto" src="./assets/banner.png" alt="banner img">
-      <h2 class="text-4xl font-extrabold m-auto text-center text-secondary mt-4 sm:w-1/2">A barn house of this design has a striking appearance</h2>
-      <p class="text-Primary  font-bold m-auto text-center mt-2 sm:w-1/2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+      <img class="w-4/5 m-auto" src="./assets/banner.png" alt="banner img">
+      <h2 class="text-4xl font-extrabold m-auto text-center text-secondary mt-4 sm:w-1/2">A barn house of this design
+        has a striking appearance</h2>
+      <p class="text-Primary  font-bold m-auto text-center mt-2 sm:w-1/2">The barn house captivates with its blend of
+        rustic charm and modern sophistication, featuring weathered wood,
         sleek metal accents, and large windows that flood the space with natural light.</p>
-      <p class=" m-auto mt-2 px-3 py-3 bg-lightGreen flex items-center justify-center text-secondary font-bold text-xl rounded-2xl cursor-pointer  w-full sm:w-72 mx-3 sm:m-auto sm:mt-6  ">View Details <ion-icon class="rotate-45 bg-green p-2 rounded-full bg-green" name="arrow-up-outline"></ion-icon></p>
+      <p
+        class=" m-auto mt-2 px-3 py-2 bg-lightGreen flex items-center justify-center text-secondary font-bold text-xl rounded-2xl cursor-pointer  w-full sm:w-72  sm:m-auto sm:mt-6  ">
+        View Details <ion-icon class="rotate-45 bg-green p-2 rounded-full bg-green" name="arrow-up-outline"></ion-icon>
+      </p>
     </div>
-
   </header>
 
-
-
-
-
   <!-- Main section  -->
-  <main></main>
+  <main>
+    <!-- The Design section -->
+    <section class="bg-gray h-auto mt-10 ">
+      <section class="sm:grid sm:grid-cols-2 sm:justify-center sm:items-center sm:px-9 ">
+        <div class="">
+          <img class="hidden sm:block" src="./assets/Vector.png" alt="Vector img">
+          <h2 class="text-center text-secondary font-extrabold text-xl flex  items-center justify-center py-4 px-3 ">
+            <p class="px-3 py-1 bg-whites rounded-lg flex items-center sm:mr-80 cursor-pointer "><ion-icon
+                name="arrow-forward-outline"></ion-icon>About Us</p>
+            <h1 class="text-secondary text-4xl font-extrabold  text-center  sm:w-[80%] sm:text-left  sm:ml-4 ">We design
+              thoughtful, liveable
+              spaces
+            </h1>
+            <p class="text-Primary text-center mt-5 font-bold sm:w-full sm:text-left  sm:ml-4  ">The barn house
+              captivates
+              with its
+              blend of rustic charm
+              and
+              modern sophistication, featuring weathered wood sleek metal accents.</p>
+            <div class="flex bg-whites h-32 mt-4 bg-whites mx-6 m-auto rounded-lg sm:w-[85%]   ">
+              <img class="w-10 h-10 object-cover mt-4 ml-4" src="./assets/commercial.png" alt="">
+              <div class="flex flex-col ml-4 mt-3">
+                <h4 class="text-secondary font-extrabold">Commercial</h4>
+                <p class="text-Primary font-bold sm:w-10/12 ">The barn house captivates with its blend of rustic charm
+                  and
+                  modern.</p>
+              </div>
+            </div>
+
+            <div class="flex h-32  bg-whites mt-4 mx-6 m-auto rounded-lg sm:w-[85%]">
+              <img class=" w-10 h-10 object-cover font-bold mt-4 ml-4" src="./assets/residential.png" alt="">
+              <div class="flex flex-col ml-4 mt-4 ">
+                <h4 class="text-secondary font-extrabold">Residential</h4>
+                <p class="text-Primary font-bold sm:w-10/12 ">The barn house captivates with its blend of rustic charm
+                  and
+                  modern.</p>
+              </div>
+            </div>
+        </div>
+        <div class="mt-14">
+          <img class="object-cover rounded-xl w-96 m-auto h-auto sm:w-[85%] sm:h-1/2 " src="./assets/Rectangle.png"
+            alt="">
+        </div>
+      </section>
+
+      <section
+        class="w-[90%] mt-10  rounded-2xl m-auto
+            h-[760px]  bg-white  sm:text-center sm:h-[180px] sm:mt-20  sm:w-[1180px] sm:flex sm:justify-center sm:items-center sm:m-auto ">
+        <div>
+          <div class=" m-auto text-center flex sm:justify-between flex-col  items-center gap-20 pt-7  sm:flex-row  ">
+            <div class="leading-8">
+              <ion-icon class="text-4xl" name="star-half-outline"></ion-icon>
+              <h1 class="text-4xl font-extrabold text-secondary">235+</h1>
+              <p class="text-Primary font-bold">Happy Client Review</p>
+            </div>
+            <div class="leading-8">
+              <ion-icon class="text-4xl" name="home-outline"></ion-icon>
+              <h1 class="text-4xl font-extrabold text-secondary">50+</h1>
+              <p class="text-Primary font-bold">Work Departments</p>
+            </div>
+            <div class="leading-8">
+              <ion-icon class="text-4xl" name="people-outline"></ion-icon>
+              <h1 class="text-4xl font-extrabold text-secondary">30k+</h1>
+              <p class="text-Primary font-bold">Our Happy Client</p>
+            </div>
+            <div class="leading-8">
+              <ion-icon class="text-4xl" name="person-add-outline"></ion-icon>
+              <h1 class="text-4xl font-extrabold text-secondary">307+</h1>
+              <p class="text-Primary font-bold">Staff Members</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-auto w-10/12 mt-5 ">
+        <div>
+          <button class="flex items-center text-secondary font-bold py-2 px-2 bg-whites m-auto rounded-xl "><ion-icon
+              name="arrow-forward-outline"></ion-icon>How we works</button>
+          <h1 class="text-secondary text-3xl font-extrabold text-center mt-2 ">Our Works Process</h1>
+          <p class="texr-secondary font-semibold text-center w-full mt-2  sm:w-[70%] sm:text-center m-auto">The barn
+            house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+            metal accents.</p>
+        </div>
+      </section>
+      <!-- card section  -->
+
+      <section class="mt-8 flex flex-col justify-between items-center gap-7 sm:gap-6 sm:flex-row">
+        <div class="w-10/12 m-auto h-64 rounded-xl bg-pink pt-14 pl-7">
+          <img src="./assets/concept.png" alt="">
+          <h1 class="text-secondary font-extrabold text-xl">Concept</h1>
+          <p class="text-Primary font-bold  ">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
+        <div class="w-10/12 m-auto h-64 rounded-xl bg-yellow pt-14 pl-7" ">
+          <img src="./assets/flow-chart.png" alt="">
+          <h1 class="text-secondary font-extrabold text-xl">Design Process</h1>
+          <p class="text-Primary font-bold ">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
+        <div class="w-10/12 m-auto h-64 rounded-xl bg-lightGrey pt-14 pl-7"">
+          <img src="./assets/vision.png" alt="">
+          <h1 class="text-secondary font-extrabold text-xl">Supervision</h1>
+          <p class="text-Primary font-bold ">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
+        <div class="w-10/12 m-auto h-64 rounded-xl bg-lightBul pt-14 pl-7"">
+          <img src="./assets/budget-planning.png" alt="">
+          <h1 class="text-secondary font-extrabold text-xl">Budget Planning</h1>
+          <p class="text-Primary font-bold ">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+      </section>
+    </section>
+
+  </main>
   <!-- Footer section  -->
   <footer></footer>
 </body>
+<!-- Primary
+
+secondary -->
 
 </html>
