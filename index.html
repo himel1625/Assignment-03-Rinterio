@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Architect Builder</title>
+  <title>Rinterio Architect </title>
   <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
   <!-- Google Fonts Cnd -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +13,12 @@
   <!-- DaisyUi & TailwindCSS Cnd -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Fonts Icon Cnd -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+<!-- custom TailwindCSS colors section -->
 <script>
   tailwind.config = {
     theme: {
@@ -35,8 +35,7 @@
           yellow: 'rgb(239, 218, 110)',
           lightGrey: 'rgb(164, 218, 195)',
           lightBul: 'rgb(119, 170, 234)',
-          blackC:'rgb(28, 28, 28)',
-
+          blackC: 'rgb(28, 28, 28)',
         },
         fontFamily: {
           serif: [" Manrope"],
@@ -49,14 +48,15 @@
   };
 </script>
 
-
-<body class="sm:max-w-[1440px] sm:w-full mx-auto font-serif bg-customGradient scroll-smooth">
+<body class="sm:max-w-[1440px] sm:w-full mx-auto sm:m-auto font-serif bg-customGradient scroll-smooth">
   <!-- Header section  -->
   <header>
     <!-- Header navbar section -->
     <nav class="flex justify-between items-center m-5  cursor-pointer">
-      <div class="font-extrabold text-2xl flex justify-center "><ion-icon class="rotate-45 bg-green p-1 rounded-full"
+      <div class="font-extrabold text-2xl flex justify-center ">
+        <ion-icon class="rotate-45 bg-green p-1 rounded-full"
           name="arrow-up-outline"></ion-icon>Rinterio</div>
+
       <div class="hidden sm:inline">
         <div class="flex gap-5 items-center justify-between">
           <ul class="flex gap-4 ">
@@ -66,6 +66,7 @@
             <li class="text-Primary"><a href="#">Blogs</a></li>
             <li class="text-Primary"><a href="#">Contact Us</a></li>
           </ul>
+
           <div class="flex items-center  ">
             <ion-icon class="p-2 text-2xl" name="search-outline"></ion-icon>
             <ion-icon class="p-2 text-2xl" name="cart-outline"></ion-icon>
@@ -75,11 +76,13 @@
           </p>
         </div>
       </div>
+
       </div>
       <div class="text-4xl bg-[rgb(255, 255, 255)] p-3 rounded-full border-slate-500 cursor-pointer sm:hidden"><ion-icon
           name="menu-outline"></ion-icon>
       </div>
     </nav>
+
     <!-- Header Hero section -->
     <div class="flex flex-col">
       <img class="w-4/5 m-auto" src="./assets/banner.png" alt="banner img">
@@ -93,11 +96,13 @@
         View Details <ion-icon class="rotate-45 bg-green p-2 rounded-full bg-green" name="arrow-up-outline"></ion-icon>
       </p>
     </div>
+
   </header>
 
   <!-- Main section  -->
   <main>
     <!-- The Design section -->
+
     <section class="bg-gray h-auto mt-10 ">
       <section class="sm:grid sm:grid-cols-2 sm:justify-center sm:items-center sm:px-9 ">
         <div class="">
@@ -105,23 +110,17 @@
           <h2 class="text-center text-secondary font-extrabold text-xl flex  items-center justify-center py-4 px-3 ">
             <p class="px-3 py-1 bg-whites rounded-lg flex items-center sm:mr-80 cursor-pointer "><ion-icon
                 name="arrow-forward-outline"></ion-icon>About Us</p>
-            <h1 class="text-secondary text-4xl font-extrabold  text-center  sm:w-[80%] sm:text-left  sm:ml-4 ">We design
-              thoughtful, liveable
-              spaces
+            <h1 class="text-secondary text-4xl font-extrabold  text-center  sm:w-[80%] sm:text-left  sm:ml-4 ">We design  thoughtful, liveable  spaces
             </h1>
+
             <p class="text-Primary text-center mt-5 font-bold sm:w-full sm:text-left  sm:ml-4  ">The barn house
-              captivates
-              with its
-              blend of rustic charm
-              and
-              modern sophistication, featuring weathered wood sleek metal accents.</p>
+              captivates  with its blend of rustic charm  and modern sophistication, featuring weathered wood sleek metal accents.</p>
+
             <div class="flex bg-whites h-32 mt-4 bg-whites mx-6 m-auto rounded-lg sm:w-[85%]   ">
               <img class="w-10 h-10 object-cover mt-4 ml-4" src="./assets/commercial.png" alt="">
               <div class="flex flex-col ml-4 mt-3">
                 <h4 class="text-secondary font-extrabold">Commercial</h4>
-                <p class="text-Primary font-bold sm:w-10/12 ">The barn house captivates with its blend of rustic charm
-                  and
-                  modern.</p>
+                <p class="text-Primary font-bold sm:w-10/12 ">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
             </div>
 
@@ -129,43 +128,46 @@
               <img class=" w-10 h-10 object-cover font-bold mt-4 ml-4" src="./assets/residential.png" alt="">
               <div class="flex flex-col ml-4 mt-4 ">
                 <h4 class="text-secondary font-extrabold">Residential</h4>
-                <p class="text-Primary font-bold sm:w-10/12 ">The barn house captivates with its blend of rustic charm
-                  and
-                  modern.</p>
+                <p class="text-Primary font-bold sm:w-10/12 ">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
             </div>
+
         </div>
         <div class="mt-14">
           <img class="object-cover rounded-xl w-96 m-auto h-auto sm:w-[85%] sm:h-1/2 " src="./assets/Rectangle.png"
             alt="">
         </div>
       </section>
-
       <section
         class="w-[90%] mt-10  rounded-2xl m-auto
             h-[760px]  bg-white  sm:text-center sm:h-[180px] sm:mt-20  sm:w-[1180px] sm:flex sm:justify-center sm:items-center sm:m-auto ">
         <div>
+
           <div class=" m-auto text-center flex sm:justify-between flex-col  items-center gap-20 pt-7  sm:flex-row  ">
             <div class="leading-8">
               <ion-icon class="text-4xl" name="star-half-outline"></ion-icon>
               <h1 class="text-4xl font-extrabold text-secondary">235+</h1>
               <p class="text-Primary font-bold">Happy Client Review</p>
             </div>
+
             <div class="leading-8">
               <ion-icon class="text-4xl" name="home-outline"></ion-icon>
               <h1 class="text-4xl font-extrabold text-secondary">50+</h1>
               <p class="text-Primary font-bold">Work Departments</p>
             </div>
+
             <div class="leading-8">
               <ion-icon class="text-4xl" name="people-outline"></ion-icon>
               <h1 class="text-4xl font-extrabold text-secondary">30k+</h1>
               <p class="text-Primary font-bold">Our Happy Client</p>
             </div>
+
             <div class="leading-8">
               <ion-icon class="text-4xl" name="person-add-outline"></ion-icon>
               <h1 class="text-4xl font-extrabold text-secondary">307+</h1>
               <p class="text-Primary font-bold">Staff Members</p>
             </div>
+
           </div>
         </div>
       </section>
@@ -174,11 +176,12 @@
         <div>
           <button class="flex items-center text-secondary font-bold py-2 px-2 bg-whites m-auto rounded-xl "><ion-icon
               name="arrow-forward-outline"></ion-icon>How we works</button>
+
           <h1 class="text-secondary text-3xl font-extrabold text-center mt-2 ">Our Works Process</h1>
           <p class="texr-secondary font-semibold text-center w-full mt-2  sm:w-[70%] sm:text-center m-auto">The barn
-            house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
-            metal accents.</p>
+            house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
+
       </section>
       <!-- card section  -->
 
@@ -208,7 +211,6 @@
         </div>
       </section>
 
-
       <!-- Our Latest Portfolio section  -->
       <section>
 
@@ -216,8 +218,7 @@
           <button class="py-2 px-3 bg-lightGreen rounded-xl font-bold flex items-center m-auto"><ion-icon
               name="arrow-forward-outline"></ion-icon>Explore our Latest works</button>
           <h1 class="mt-4 text-4xl font-bold text-secondary">Our Latest Portfolio</h1>
-          <p class="text-Primary text-center  mt-3 m-auto w-5/6  font-bold sm:w-2/4 sm:mt-4 sm:m-auto">The barn house
-            captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+          <p class="text-Primary text-center  mt-3 m-auto w-5/6  font-bold sm:w-2/4 sm:mt-4 sm:m-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
             metal accents.</p>
         </div>
 
@@ -268,65 +269,90 @@
               <img class="object-cover w-[90%] m-auto h-[80%] rounded-xl sm:w-80" src="./assets/img5.png" alt="">
             </div>
           </div>
-
         </section>
+      </section>
+
+      <!-- Our next Portfolio section  -->
+      <div>
+        <div class="mt-8 m-auto text-center">
+          <button class="py-2 px-3 bg-lightGreen rounded-xl font-bold flex items-center m-auto"><ion-icon
+              name="arrow-forward-outline"></ion-icon>Explore our Next works</button>
+          <h1 class="mt-4 text-4xl font-bold text-secondary">Our Next Portfolio</h1>
+          <p class="text-Primary text-center  mt-3 m-auto w-5/6  font-bold sm:w-2/4 sm:mt-4 sm:m-auto">The barn house  captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek  metal accents.</p>
+        </div>
+      </div>
+
+      <section class="sm:flex sm:items-center sm:gap-4 mb-5 pb-12">
+        <div class=" w-[90%] m-auto mt-8 bg-whites rounded-lg sm:flex  sm:items-center">
+          <img class="w-[90%] object-cover m-auto rounded-xl pt-3 sm:w-[50%] sm:h-3/4  sm:m-auto "
+            src="./assets/Architects-01.jpg" alt="img">
+
+          <div>
+            <h1 class="text-xl font-extrabold text-center mt-3  text-secondary sm:mb-6 sm:text-2xl ">Celebrated
+              Architectural Designer</h1>
+            <p class="text-Primary text-center mt-5 sm:w-full sm:m-auto sm:">Despite the fact that architectural
+              designers are not accorded the same level of regard, prominence, and worldwide fame as sculptors or painters, the creativity and originality of the architecture designer are the most
+              constructive and useful to the growth and evolution of a civilization <span class="cursor-pointer">....</span></p>
+
+            <div class="py-3 px-4 bg-lightGreen m-auto w-10/12 cursor-pointer rounded-xl flex  mt-4 mb-4  sm:px-2 ">
+              <p class="flex items-center m-auto text-center text-xl font-bold "><ion-icon
+                  name="arrow-forward-outline"></ion-icon>
+                View more details.....</p>
+            </div>
+
+          </div>
+        </div>
       </section>
     </section>
 
     <!-- Let’s Discuss Next Project section -->
     <section class="h-auto bg-bgPaper w-full m-auto  bg-cover bg-no-repeat mt-2">
       <section>
-
-        <div class="flex items-center pt-4 ">
+        <div class="flex items-center pt-9 ">
           <p
-            class="flex items-center m-auto text-center py-2 px-2 bg-lightGreen  rounded-2xl text-secondary font-extrabold pb-6">
+            class="flex items-center justify-center m-auto text-center py-2 px-4 bg-lightGreen  rounded-2xl text-secondary font-extrabold pb-6">
             <ion-icon name="arrow-forward-outline"></ion-icon>Lets Connect
           </p>
         </div>
 
         <h1 class="text-secondary font-extrabold text text-3xl w-2/3 m-auto pt-6  text-center">Lets Discuss Next Project
         </h1>
-        <p class="text-Primary font-bold mt-5 sm:w-[55%] sm:m-auto text-center">The barn house captivates with its blend
-          of rustic charm and modern
-          sophistication, featuring weathered
-          wood,sleek
-          metal accents.</p>
+        <p class="text-Primary font-bold pt-8 sm:w-[55%] sm:m-auto text-center ">The barn house captivates with its
+          blend of rustic charm and modern  sophistication, featuring weathered wood,sleek metal accents.</p>
         </div>
         <div>
       </section>
       <!-- form section  -->
-      <section class="flex flex-col mt-5">
-        <form class="grid grid-rows-1 sm:grid-cols-2 sm:w-[80%] gap-5 w-96 m-auto " action="#">
-          <input class="py-3 rounded-3xl " type="text" placeholder="First Name*">
+      <section class="flex flex-col mt-5 pt-4">
+        <form class="grid grid-rows-1 sm:grid-cols-2 sm:w-2/3 gap-5 w-96 m-auto " action="#">
+          <input class="py-3 rounded-3xl file:px-4 " type="text" placeholder="First Name*">
           <input class="py-3 rounded-3xl " type="text" placeholder="Last Name*">
           <input class="py-3 rounded-3xl " type="number" placeholder="Phone Number*">
           <input class="py-3 rounded-3xl " type="email" placeholder="Email Number*">
         </form>
-        <textarea class="py-20 rounded-xl  w-[80%] m-auto mt-5
-        " placeholder="Write your message here"></textarea>
+        <textarea rows="8" cols="45" placeholder="Write your message here..."
+          class=" rounded-2xl resize-none  m-auto mt-5 sm:w-[66%] "></textarea>
 
         <div class="mt-5 m-auto flex items-center justify-center sm:w-[85%] sm:pt-7 sm:pb-11 sm:m-auto">
           <p
-            class="flex items-center justify-center rounded-xl cursor-pointer text-xl font-extrabold w-96 text-center  py-2 bg-green  sm:w-[90%]">
+            class="flex items-center justify-center rounded-xl cursor-pointer text-xl font-extrabold w-96 text-center  py-2 bg-green  sm:w-3/4 mb-8">
             Send Mail<ion-icon class="rotate-45 bg-black text-white p-1 rounded-full "
               name="arrow-up-outline"></ion-icon></p>
         </div>
+
       </section>
     </section>
   </main>
-
-
   <!-- Footer section  -->
   <footer class="bg-blackC h-auto w-full mt-10 sm:pt-10">
     <div class="font-extrabold text-2xl flex justify-center
-    text-white pt-4 "><ion-icon class="rotate-45 bg-green p-1 rounded-full"
-        name="arrow-up-outline"></ion-icon>Rinterio</div>
-    <p class="text-Primary m-auto text-center  w-10/12 mt-4 sm:w-2/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
-      sleek
-      metal accents.</p>
+    text-white pt-4 "><ion-icon class="rotate-45 bg-green p-1 rounded-full" name="arrow-up-outline"></ion-icon>Rinterio</div>
+    <p class="text-Primary m-auto text-center  w-10/12 mt-4 sm:w-2/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
     </div>
+
     <div>
-      <ul class="text-center text-white flex  flex-col sm:flex-row sm:gap-10 sm:mt-10 sm:justify-center justify-between gap-6 mt-6">
+      <ul
+        class="text-center text-white flex  flex-col sm:flex-row sm:gap-10 sm:mt-10 sm:justify-center justify-between gap-6 mt-6">
         <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -337,12 +363,11 @@
 
     <div class="mt-7 m-auto flex items-center justify-center sm:w-52 sm:pt-7 sm:pb-11 sm:m-auto pb-10 ">
       <p
-        class="flex items-center justify-center rounded-xl cursor-pointer text-xl font-extrabold w-96 text-center  py-2 bg-green  sm:w-[90%]">Book Consult<ion-icon class="rotate-45 bg-black text-white p-1 rounded-full  " name="arrow-up-outline"></ion-icon></p>
+        class="flex items-center justify-center rounded-xl cursor-pointer text-xl font-extrabold w-96 text-center  py-2 bg-green  sm:w-[90%]">
+        Book Consult<ion-icon class="rotate-45 bg-black text-white p-1 rounded-full  "
+          name="arrow-up-outline"></ion-icon></p>
     </div>
+
   </footer>
 </body>
-<!-- Primary
-
-secondary -->
-
 </html>
